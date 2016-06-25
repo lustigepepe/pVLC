@@ -273,18 +273,12 @@ frequenzStruct* fillNoiseMask(unsigned n, int s, filter_t* filter, frequenzStruc
 float frequSub(float value, float divider) {
 
 	divider = value / divider;
-	
-	if (value < 0.0f) {
-		value += divider; 
 
-	}
-
-	if (value > 0.0f) {
+	if (value > 0.0f) 
 
 		value -= divider; 
 
-	}
-
+	
 	return value;
 }
 
